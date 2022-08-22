@@ -56,10 +56,10 @@ function addUser(){
     let position = dom("#chucvu").value;
     let hour = +dom("#gioLam").value;
 
-    // let isvalid = validateForm();
-    // if(!isvalid){
-    //     return;
-    // }
+    let isvalid = validateForm();
+    if(!isvalid){
+        return;
+    }
     
     //B2: Tạo object chứa thông tin trên
     let staff = new Staff(account, name, email, password, date, salary, position, hour);
